@@ -33,16 +33,6 @@ def calcTotalComputerCard():
         else:
             total_computer_cards = total_computer_cards + card
     return total_computer_cards
-        
-# at start pick two cards
-your_cards.append(random.choice(cards))
-your_cards.append(random.choice(cards))
-computer_cards.append(random.choice(cards))
-computer_cards.append(random.choice(cards))
-
-
-print(f"Your cards: {your_cards}, total: {calcTotalYourCard()}")
-print(f"Computer first card: {computer_cards[0]}")
 
 def pickNewCard():
     call = input("Pick new card?: ")
@@ -83,4 +73,13 @@ def calculate():
         computer_cards.append(random.choice(cards))
         calculate()
         
+# at start pick two cards
+your_cards.append(random.choice(cards))
+your_cards.append(random.choice(cards))
+computer_cards.append(random.choice(cards))
+computer_cards.append(random.choice(cards))
+
+
+print(f"Your cards: {your_cards}, total: {calcTotalYourCard()}")
+print(f"Computer first card: {computer_cards[0]}")
 pickNewCard()
